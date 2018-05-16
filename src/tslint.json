@@ -1,6 +1,10 @@
 {
-    "extends": "../tslint.json",
+  "extends": [
+    "tslint-eslint-rules",
+    "../tslint.json"
+  ],
     "rules": {
+        "no-constant-condition": true,
         "directive-selector": [
             true,
             "attribute",
