@@ -109,7 +109,9 @@
     "prefer-const": true,
     "quotemark": [
       true,
-      "single"
+      "single",
+      "avoid-template",
+      "avoid-escape"
     ],
     "radix": true,
     "semicolon": [
@@ -207,6 +209,20 @@
       true,
       "call-signature",
       "property-declaration"
-    ]
+    ],
+    "no-angle-bracket-type-assertion": true,
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "prefer-object-spread": true,
+    "object-literal-shorthand": true,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "prefer-template": true,
+    "no-invalid-template-strings": true,
+    "binary-expression-operand-order": true
   }
 }
