@@ -92,7 +92,7 @@
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "switch-default": true,
-    "no-trailing-whitespace": false,
+    "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
     "no-unused-variable": true,
@@ -104,7 +104,8 @@
       "check-open-brace",
       "check-catch",
       "check-else",
-      "check-whitespace"
+      "check-whitespace",
+      "check-finally"
     ],
     "prefer-const": true,
     "quotemark": [
@@ -138,9 +139,13 @@
       "check-branch",
       "check-decl",
       "check-operator",
+      "check-module",
       "check-separator",
+      "check-rest-spread",
       "check-type",
-      "check-module"
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
     ],
     "directive-selector": [
       true,
@@ -223,6 +228,34 @@
     ],
     "prefer-template": true,
     "no-invalid-template-strings": true,
-    "binary-expression-operand-order": true
+    "binary-expression-operand-order": true,
+    "no-dynamic-delete": true,
+    "use-isnan": true,
+    "no-conditional-assignment": true,
+    "prefer-while": true,
+    "prefer-conditional-expression": [
+      true,
+      "check-else-if"
+    ],
+    "prefer-while": true,
+    "no-unsafe-finally": true,
+    "encoding": true,
+    "cyclomatic-complexity": [
+      true,
+      20
+    ],
+    "max-file-line-count": [true, 1500],
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always",
+        "method": "never",
+        "constructor": "never"
+      }
+    ],
+    "space-within-parens": 0,
+    "newline-per-chained-call": true
   }
 }

@@ -23,6 +23,7 @@ export class AppComponent {
   dog: Animal = new Animal('dog');
   cat1: Animal;
   dog1: Animal;
+  notANumber: any = NaN;
 
   testPublic: (y) => 'jj';
   t = 'test';
@@ -36,16 +37,22 @@ export class AppComponent {
     testPrivate('test');
     this.cat1 = this.myArray[0];
     this.dog1 = this.myArray[1];
-    const yy = this.cat1 === null;
+
+    const ggg = isNaN(this.notANumber);
+    const yy = ggg === null;
     if (yy) {}
+    if (isNaN(NaN)) {}
     if (yy === true) {}
     // [this.cat1, this.dog1] = this.myArray;
     this.testPublic('yy');
     createWitch('testit');
+    for (let i = 0; i++; i < 10) {
+      i = i + 5;
+    }
   }
 }
 
-function testPrivate ( tt: string): string {
+function testPrivate(tt: string): string {
     let notes: string;
     let signatureTypeName: string;
     notes = 'yu';
