@@ -1,14 +1,34 @@
 import { Component } from '@angular/core';
+const pp = 'testme';
 
 @Component({
-  selector: 'app-root',
   templateUrl: './app.component.html',
+  selector: 'app-root',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Lint Demo';
-  constructor() {
-    console.log('TESTME');
-  }
+  demoTitle = 'hello world';
+  myBool = true;
 
+  testPublic: (y) => 'jj';
+  t = 'test';
+
+  constructor() {
+    if (this.myBool) {
+      console.log('TESTME', this.t);
+    }
+
+    testPrivate('test');
+    this.testPublic('yy');
+  }
+}
+
+function testPrivate( tt: string) {
+    let notes: string;
+    let signatureTypeName: string;
+    notes = 'yu';
+    signatureTypeName = 'hj';
+    const ttt = tt + pp + notes + signatureTypeName ;
+    console.log(ttt);
 }

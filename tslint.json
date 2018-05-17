@@ -176,6 +176,37 @@
     "pipe-naming": [
       true,
       "camelCase"
+    ],
+    // Add angular-tslint-rules
+    "prefer-function-over-method": [
+      true,
+      "allow-public",
+      "allow-protected"
+    ],
+    "no-invalid-this": [
+      true,
+      "check-function-in-method"
+    ],
+    "adjacent-overload-signatures": true,
+    "new-parens": true,
+    "prefer-method-signature": true,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "no-return-await": true,
+    "one-variable-per-declaration": [
+      true,
+      "ignore-for-loop"
+    ],
+    "no-implicit-dependencies": true,
+    "no-duplicate-imports": true,
+    "no-default-export": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "property-declaration"
     ]
   }
 }
