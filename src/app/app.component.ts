@@ -49,6 +49,12 @@ export class AppComponent {
     for (let i = 0; i++; i < 10) {
       i = i + 5;
     }
+    this.sayHello();
+  }
+  sayHello(): number {
+    let x = 6;
+    x = x++;
+    return x;
   }
 }
 

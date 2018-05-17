@@ -256,6 +256,19 @@
       }
     ],
     "space-within-parens": 0,
-    "newline-per-chained-call": true
+    "align": [
+      true,
+      "parameters",
+      "statements"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never",
+        "esSpecCompliant": true
+      }
+    ]
+
   }
 }
